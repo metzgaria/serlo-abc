@@ -1,14 +1,20 @@
 import React from 'react'
 import { Component } from 'react'
-import { AppRegistry, Text, View } from 'react-native'
+import { AppRegistry, Text, View, TouchableHighlight } from 'react-native'
 import { connect } from 'react-redux'
+
+import { start } from '../actions'
+import { abc } from '../courses/CourseAbc'
 
 class MenuView extends Component {
   render() {
+    console.log(abc)
     return <View>
-      <Text>{this.props.text}</Text>
-      <Text onPress={this.props.next}>Next</Text>
-      <Text onPress={this.props.tutorial}>Tutorial</Text>
+      { abc.map( (ex,index,array) => {
+        return <TouchableHighlight key={index} onPress={ () => this.props.start(index) }>
+          <Text>{index} - {ex.title}</Text>
+          </TouchableHighlight>
+      } ) }
     </View>
   }
 }

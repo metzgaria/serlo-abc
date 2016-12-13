@@ -8,7 +8,8 @@ import { selectView } from '../reducers'
 class Container extends React.Component {
   render() {
     console.log( this.props.view )
-    return getTemplate( this.props.view )
+    let T = getTemplate( this.props.view.template )
+    return <T {...this.props.view}/>
   }
 }
 

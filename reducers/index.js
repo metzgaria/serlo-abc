@@ -1,15 +1,21 @@
-import { NEXT, TUTORIAL } from '../actions'
-
+import { START, NEXT, TUTORIAL } from '../actions'
 // Selectors
 export const selectView = (state) => state.view
 
+const defaultState = {
+  view: {template: "Menu"}
+}
 // Reducers
-export default (state = {view:{template:"Text", text:"Hallo"}}, action) => {
+export default (state = defaultState, action) => {
   switch (action.type) {
     case TUTORIAL:
       return Object.assign({}, state, {
-        view:{template:"TextTutorial", explanation:"blablabla"},
-        lastView:action.currentView
+        view: {template: "TextTutorial", explanation:"blablabla"}
+      })
+    case START:
+    case NEXT:
+      return Object.assign({}, state, {
+        view: action.view,
       })
     default:
       return state
