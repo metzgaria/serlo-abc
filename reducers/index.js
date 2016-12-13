@@ -1,4 +1,4 @@
-import { START, NEXT, TUTORIAL } from '../actions'
+import { START, NEXT, TUTORIAL, MENU } from '../actions'
 // Selectors
 export const selectView = (state) => state.view
 
@@ -14,6 +14,7 @@ export default (state = defaultState, action) => {
       })
     case START:
     case NEXT:
+    case MENU:
       return Object.assign({}, state, {
         view: action.view,
       })
