@@ -4,20 +4,13 @@ import { AppRegistry, Text, View } from 'react-native'
 import { connect } from 'react-redux'
 
 import { next, tutorial, menu } from '../actions'
+import { Navigation } from '../components/NavigationComponent'
 
 class TextView extends Component {
   render() {
     console.log(this.props)
     return <View style={{flex: 1}}>
-      <View style={{
-        flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',}}>
-        <Text onPress={ () => this.props.menu() }>Menu</Text>
-        {/* <Text onPress={ () => this.props.tutorial(this.view.id) }>Tutorial</Text> */}
-        <Text onPress={ () => this.props.next(this.props.id) }>Next</Text>
-      </View>
+      <Navigation curViewId={this.props.id}/>
       <View style={{
         flex: 12,
         flexDirection: 'column',
