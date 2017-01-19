@@ -46,24 +46,6 @@ export const MenuListItem = ({ text, onPress }) => (
   </View>
 )
 
-/*
-export class MenuListItem extends Component {
-
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    return (
-      <View style={styles.listItemContainer}>
-        <Letter letter={this.props.text} onPress={this.props.onSelection} />
-      </View>
-    )
-  }
-
-}
-*/
-
 export const Letter = ({ letter, onPress }) => (
   <TouchableOpacity onPress={onPress}>
     <View style={[styles.letterContainer, styles.shadow]}>
