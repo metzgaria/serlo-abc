@@ -1,0 +1,29 @@
+{
+	"categories": [
+		{
+			"title": "A", 
+			"exercises": [
+				{
+					"id": 0, 
+					"type": "ShowLetter", 
+					"title": "A", 
+					"letter": "A", 
+					"sound": "a", 
+					"isRepeat": true
+				}, 
+				{
+					"id": 1, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Ananas", 
+					"image": "ananas", 
+					"sound": "ananas"
+				}
+			]
+		}, 
+		{
+			"title": "Hallo!", 
+			"exercises": []
+		}
+	]
+}
