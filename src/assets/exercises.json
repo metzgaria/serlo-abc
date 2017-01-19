@@ -5,19 +5,408 @@
 			"exercises": [
 				{
 					"id": 0, 
-					"type": "ShowLetter", 
-					"title": "A", 
+					"type": "Intro", 
 					"letter": "A", 
-					"sound": "a", 
-					"isRepeat": true
-				}, 
+					"images": {
+						"left": "ananas", 
+						"right": "apfel", 
+						"bottom": "affe"
+					}
+				},
 				{
 					"id": 1, 
+					"type": "ShowLetter", 
+					"letter": "A",
+					"isRepeat": false
+				}, 
+				{
+					"id": 2, 
+					"type": "ShowLetter", 
+					"letter": "a",
+					"isRepeat": false
+				}, 
+				{
+					"id": 3, 
 					"type": "ShowWord", 
 					"letter": "A", 
 					"word": "Ananas", 
-					"image": "ananas", 
+					"isRepeat": false
+				}, 
+				{
+					"id": 4, 
+					"type": "ExplanationText", 
+					"instruction": "Wiederholen Sie den Buchstaben.", 
+					"sound": "filename"
+				}, 
+				{
+					"id": 5, 
+					"type": "TutorialVideo", 
+					"video": "filename"
+				}, 
+				{
+					"id": 6, 
+					"type": "ShowLetter", 
+					"letter": "A", 
+					"isRepeat": true
+				}, 
+				{
+					"id": 7, 
+					"type": "ExplanationText", 
+					"instruction": "Schreiben Sie den Buchstaben.", 
+					"sound": "filename"
+				}, 
+				{
+					"id": 8, 
+					"type": "Trace", 
+					"image": "filename"
+				}, 
+				{
+					"id": 9, 
+					"type": "Trace", 
+					"image": "filename"
+				}, 
+				{
+					"id": 10, 
+					"type": "Trace", 
+					"image": "filename"
+				}, 
+				{
+					"id": 11, 
+					"type": "Trace", 
+					"image": "filename"
+				}, 
+				{
+					"id": 12, 
+					"type": "ExplanationText", 
+					"instruction": "Hören Sie die Wörter.", 
+					"sound": "filename"
+				}, 
+				{
+					"id": 13, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Ananas", 
+					"isRepeat": false
+				},
+				{
+					"id": 14, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Apfel", 
+					"isRepeat": false
+				},
+				{
+					"id": 15, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Oma", 
+					"isRepeat": false
+				},
+				{
+					"id": 16, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Affe", 
+					"isRepeat": false
+				},
+				{
+					"id": 17, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Nase", 
+					"isRepeat": false
+				},
+				{
+					"id": 18, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Sofa", 
+					"isRepeat": false
+				},
+				{
+					"id": 19, 
+					"type": "ExplanationText", 
+					"instruction": "Wiederholen Sie den Buchstaben.", 
+					"sound": "filename"
+				}, 
+				{
+					"id": 20, 
+					"type": "TutorialVideo", 
+					"video": "filename"
+				},
+				{
+					"id": 21, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Ananas", 
+					"isRepeat": true
+				}, 
+				{
+					"id": 22, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Apfel", 
+					"isRepeat": true
+				}, 
+				{
+					"id": 23, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Oma", 
+					"isRepeat": true
+				}, 
+				{
+					"id": 24, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Affe", 
+					"isRepeat": true
+				},
+				{
+					"id": 25, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Nase", 
+					"isRepeat": true
+				},
+				{
+					"id": 26, 
+					"type": "ShowWord", 
+					"letter": "A", 
+					"word": "Sofa", 
+					"isRepeat": true
+				},
+				{
+					"id": 27, 
+					"type": "ExplanationText", 
+					"instruction": "Drehen Sie den Buchstaben.", 
+					"sound": "filename"
+				}, 
+				{
+					"id": 28, 
+					"type": "RotateLetter", 
+					"letter": "A"
+				}, 
+				{
+					"id": 29, 
+					"type": "RotateLetter", 
+					"letter": "a"
+				}, 
+				{
+					"id": 30, 
+					"type": "ExplanationText", 
+					"instruction": "Markieren Sie alle A und a.", 
+					"sound": "filename"
+				}, 
+				{
+					"id": 31, 
+					"type": "FindLetter", 
+					"letter": "A", 
+					"word": "Ananas"
+				}, 
+				{
+					"id": 32, 
+					"type": "FindLetter", 
+					"letter": "A", 
+					"word": "Apfel"
+				}, 
+				{
+					"id": 33, 
+					"type": "FindLetter", 
+					"letter": "A", 
+					"word": "Dose", 
+					"image": "dose", 
+					"sound": "dose"
+				}, 
+				{
+					"id": 34, 
+					"type": "FindLetter", 
+					"letter": "A", 
+					"word": "Oma"
+				},
+				{
+					"id": 35, 
+					"type": "FindLetter", 
+					"letter": "A", 
+					"word": "Affe"
+				},
+				{
+					"id": 36, 
+					"type": "FindLetter", 
+					"letter": "A", 
+					"word": "Esel"
+				},
+				{
+					"id": 37, 
+					"type": "FindLetter", 
+					"letter": "A", 
+					"word": "Nase", 
+					"image": "nase", 
+					"sound": "nase"
+				},
+				{
+					"id": 38, 
+					"type": "FindLetter", 
+					"letter": "A", 
+					"word": "Sofa"
+				},
+				{
+					"id": 39, 
+					"type": "FindLetter", 
+					"letter": "A", 
+					"word": "Sonne"
+				},
+				{
+					"id": 40, 
+					"type": "FindLetter", 
+					"letter": "A", 
+					"word": "Ananas"
+				}, 
+				{
+					"id": 41, 
+					"type": "FindLetter", 
+					"letter": "A", 
+					"word": "Sofa"
+				},
+				{
+					"id": 42, 
+					"type": "ExplanationText", 
+					"instruction": "Schreiben Sie den Buchstaben.", 
+					"sound": "filename"
+				}, 
+				{
+					"id": 43, 
+					"type": "Trace", 
+					"image": "filename"
+				}, 
+				{
+					"id": 44, 
+					"type": "Trace", 
+					"image": "filename"
+				}, 
+				{
+					"id": 45, 
+					"type": "Trace", 
+					"image": "filename"
+				}, 
+				{
+					"id": 46, 
+					"type": "ExplanationText", 
+					"instruction": "Markieren Sie das richtige Bild.", 
+					"sound": "filename"
+				}, 
+				{
+					"id": 47, 
+					"type": "MatchImage", 
+					"word": "Apfel", 
+					"images": [
+						"nase", 
+						"esel", 
+						"apfel", 
+						"affe"
+					], 
+					"sound": "apfel"
+				}, 
+				{
+					"id": 48, 
+					"type": "MatchImage", 
+					"word": "Ananas", 
+					"images": [
+						"sofa", 
+						"ananas", 
+						"oma", 
+						"sonne"
+					], 
 					"sound": "ananas"
+				}, 
+				{
+					"id": 49, 
+					"type": "MatchImage", 
+					"word": "Oma", 
+					"images": [
+						"sofa", 
+						"esel", 
+						"ananas", 
+						"oma"
+					], 
+					"sound": "oma"
+				}, 
+				{
+					"id": 50, 
+					"type": "MatchImage", 
+					"word": "Esel", 
+					"images": [
+						"dose", 
+						"sonne", 
+						"sofa", 
+						"esel"
+					], 
+					"sound": "esel"
+				}, 
+				{
+					"id": 51, 
+					"type": "MatchImage", 
+					"word": "Affe", 
+					"images": [
+						"ananas", 
+						"nase", 
+						"dose", 
+						"affe"
+					], 
+					"sound": "affe"
+				}, 
+				{
+					"id": 52, 
+					"type": "MatchImage", 
+					"word": "Dose", 
+					"images": [
+						"affe", 
+						"apfel", 
+						"nase", 
+						"dose"
+					], 
+					"sound": "dose"
+				}, 
+				{
+					"id": 53, 
+					"type": "MatchImage", 
+					"word": "Sonne", 
+					"images": [
+						"esel", 
+						"sofa", 
+						"apfel", 
+						"sonne"
+					], 
+					"sound": "sonne"
+				}, 
+				{
+					"id": 54, 
+					"type": "MatchImage", 
+					"word": "Nase", 
+					"images": [
+						"affe", 
+						"oma", 
+						"nase", 
+						"apfel"
+					], 
+					"sound": "nase"
+				}, 
+				{
+					"id": 55, 
+					"type": "MatchImage", 
+					"word": "Sofa", 
+					"images": [
+						"nase", 
+						"ananas", 
+						"sonne", 
+						"sofa"
+					], 
+					"sound": "sofa"
+				}, 
+				{
+					"id": 56, 
+					"type": "GratulationVideo", 
+					"video": "filename"
 				}
 			]
 		}, 
