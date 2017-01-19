@@ -29,7 +29,6 @@ const styles = {
     padding: 5
   },
   shadow: {
-    elevation: 10,
     shadowColor: 'rgba(0, 0, 0, 0.1)',
     shadowOpacity: 1,
     shadowRadius: 0,
