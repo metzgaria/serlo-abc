@@ -34,10 +34,14 @@ const ShowLetter = ({ letter, sound, isRepeat }) => {
   const repeatSound = SoundUtils.getSound('repeat')
 
   const play = () => {
-    if (isRepeat) this.icon.unfocus()
+    if (isRepeat) {
+      this.icon.unfocus()
+    }
     soundFile.play((success) => {
       if (success) {
-        if (isRepeat) this.icon.focus()
+        if (isRepeat) {
+          this.icon.focus()
+        }
         repeatSound.play()
       }
     })
@@ -47,7 +51,9 @@ const ShowLetter = ({ letter, sound, isRepeat }) => {
     if (isRepeat) {
       return (
         <IconWithBackground
-          ref={(view) => { this.icon = view }}
+          ref={(view) => {
+            this.icon = view
+          }}
           icon={repeatIcon}
           size={40}
         />
@@ -70,7 +76,7 @@ const ShowLetter = ({ letter, sound, isRepeat }) => {
         />
       </View>
       <View height={80}>
-        { toggleRepeatButton() }
+        {toggleRepeatButton()}
       </View>
     </View>
   )

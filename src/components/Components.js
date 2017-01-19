@@ -1,11 +1,76 @@
 import React, { Component } from 'react'
-import { TouchableOpacity, View, Image } from 'react-native'
+import { TouchableOpacity, View, Image, Text } from 'react-native'
 
 const styles = {
   buttonWithInset: {
     marginLeft: -50
+  },
+  listItemContainer: {
+    flex: 1,
+    paddingTop: 8,
+    paddingLeft: 16,
+    paddingRight: 16,
+    paddingBottom: 8,
+    alignItems: 'center'
+  },
+  letterContainer: {
+    padding: 10,
+    backgroundColor: '#73DBFF',
+    borderRadius: 30,
+  },
+  letter: {
+    fontSize: 24,
+    color: 'white',
+    fontWeight: 'bold'
+  },
+  button: {
+    backgroundColor: '#73DBFF',
+    borderRadius: 9999,
+    padding: 5
+  },
+  shadow: {
+    elevation: 10,
+    shadowColor: 'rgba(0, 0, 0, 0.1)',
+    shadowOpacity: 1,
+    shadowRadius: 0,
+    shadowOffset: {
+      height: 4,
+      width: 4
+    }
   }
 }
+
+export const MenuListItem = ({ text, onPress }) => (
+  <View style={styles.listItemContainer}>
+    <Letter letter={text} onPress={onPress} />
+  </View>
+)
+
+/*
+export class MenuListItem extends Component {
+
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <View style={styles.listItemContainer}>
+        <Letter letter={this.props.text} onPress={this.props.onSelection} />
+      </View>
+    )
+  }
+
+}
+*/
+
+export const Letter = ({ letter, onPress }) => (
+  <TouchableOpacity onPress={onPress}>
+    <View style={[styles.letterContainer, styles.shadow]}>
+      <Text style={styles.letter}>{letter}</Text>
+    </View>
+  </TouchableOpacity>
+)
 
 export const RoundImageWithBorder = ({ image, size }) => (
   <Image
@@ -68,19 +133,7 @@ export class IconWithBackground extends Component {
 export const RoundButton = ({ icon, size, style, onPress }) => (
   <TouchableOpacity onPress={onPress} style={style}>
     <View
-      style={{
-        backgroundColor: '#73DBFF',
-        borderRadius: 9999,
-        padding: 5,
-        elevation: 10,
-        shadowColor: 'rgba(0, 0, 0, 0.1)',
-        shadowOpacity: 1,
-        shadowRadius: 0,
-        shadowOffset: {
-          height: 4,
-          width: 4
-        }
-      }}
+      style={[styles.button, styles.shadow]}
     >
       <Image
         source={icon}
