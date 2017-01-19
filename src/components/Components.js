@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { TouchableOpacity, View, Image, Text } from 'react-native'
 
+import arrowRight from '../assets/images/arrow_right.png'
+
 const styles = {
   buttonWithInset: {
     marginLeft: -50
@@ -14,7 +16,14 @@ const styles = {
     alignItems: 'center'
   },
   letterContainer: {
-    padding: 10,
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 8,
+    paddingLeft: 16,
+    paddingRight: 16,
+    paddingBottom: 8,
     backgroundColor: '#73DBFF',
     borderRadius: 30,
   },
@@ -49,6 +58,15 @@ export const Letter = ({ letter, onPress }) => (
   <TouchableOpacity onPress={onPress}>
     <View style={[styles.letterContainer, styles.shadow]}>
       <Text style={styles.letter}>{letter}</Text>
+      <Image
+        resizeMode='contain'
+        source={arrowRight}
+        style={{
+          height: 30,
+          width: 10,
+          marginLeft: 6
+        }}
+      />
     </View>
   </TouchableOpacity>
 )

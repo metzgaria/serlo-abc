@@ -17,13 +17,14 @@ class Menu extends Component {
     const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
     this.state = {
       dataSource: ds.cloneWithRows(
-        ['A', 'N', 'E', 'Hallo!', 'A N E', 'S', 'T', 'O']
+        ['A', 'N', 'E', 'Hallo!', 'A N E', 'S', 'T', 'O', 'S T O', 'R', 'I','H']
       )
     }
   }
 
   onSelection(index) {
-    console.log(`Selected “${this.state.dataSource.getRowData(0, index)}” at index ${index}`)
+    const item = this.state.dataSource.getRowData(0, index)
+    console.log(`Selected “${item}” at index ${index}`)
   }
 
   render() {
