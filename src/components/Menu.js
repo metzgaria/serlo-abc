@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ListView, View, Alert } from 'react-native'
+import { ListView, View } from 'react-native'
 
 import { MenuListItem } from '../components/Components'
 
@@ -24,7 +24,6 @@ class Menu extends Component {
   }
 
   onSelection(index) {
-    const item = this.state.dataSource.getRowData(0, index)
     const category = json["categories"][index]
     console.log(`Category “${category["title"]}” with ${category["exercises"].length} exercises`);
   }
